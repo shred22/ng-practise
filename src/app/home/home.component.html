@@ -1,0 +1,15 @@
+<div class="container top-space">
+<div class="row">
+  <div class="col-md-6">
+
+<b><label for="username">Enter your username :  </label></b>
+<input type="text" [(ngModel)]="username" (click)="handleInputClickEvent()"/>
+<p *ngIf= "showParagraph" [ngClass]="{red: username !=''}">{{paragraphText}}</p>
+<p [ngClass]="{green: username ===''}">This should be in Bootsrap font</p>
+
+<hr>
+
+<button type="button" class="btn btn-dark" (click)="handleEvent()">Click Me</button>
+</div>
+</div>
+</div>
